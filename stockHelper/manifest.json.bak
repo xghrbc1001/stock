@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "stockHelper",
+    "description": "stock helper",
+    "version": "1.0",    
+	"content_scripts" : [
+    {
+      "matches" : [
+        "http://*.baidu.com/*",
+        "https://*/*"
+      ],
+      "js" : ["jquery.min.js","contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ]
+}
